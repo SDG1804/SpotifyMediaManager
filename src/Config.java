@@ -1,5 +1,3 @@
-package src;
-
 public class Config {
     private final SongDB songDB = new MongSong();
 

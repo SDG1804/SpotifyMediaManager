@@ -1,5 +1,3 @@
-package src;
-
 public final class GetSongUseCase {
     private final SongDB songDB;
 

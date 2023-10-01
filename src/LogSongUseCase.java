@@ -1,4 +1,3 @@
-package src;
 import org.json.JSONException;
 
 public final class LogSongUseCase {

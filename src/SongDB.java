@@ -1,5 +1,3 @@
-package src;
-
 import org.json.JSONException;
 
 public interface SongDB {
