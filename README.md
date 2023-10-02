@@ -20,9 +20,9 @@ https://developer.spotify.com/documentation/web-api
 We used Postman to test out the API. We first created a token for us to use and then used the token to access things
 like artists and songs. The screenshots of our progress is below: 
 
-<img src="/Users/aviwalia/Downloads/Screen Shot 2023-09-30 at 9.28.24 PM.png"/>
-<img src="/Users/aviwalia/Downloads/Screen Shot 2023-09-30 at 9.28.33 PM.png"/>
-<img src="/Users/aviwalia/Documents/Screenshot 2023-10-01 at 8.26.31 PM.png"/>
+![Postman Example 1.png](src%2Fimages%2FPostman%20Example%201.png)
+![Postman Example 2.png](src%2Fimages%2FPostman%20Example%202.png)
+![Postman Example 3.png](src%2Fimages%2FPostman%20Example%203.png)
 
 ## Java Code
 We created an example of an API call with java, creating an Artist object.
@@ -30,7 +30,7 @@ We created an example of an API call with java, creating an Artist object.
 The example shown below is when we call the information for the artist "Pitbull".
 You can find our code in the src folder of this repository.
 
-<img src="/Users/aviwalia/Documents/Screenshot 2023-10-01 at 8.56.10 PM.png"/>
+![Java Output Example.png](src%2Fimages%2FJava%20Output%20Example.png)
 
 ## Technical Problems
 - We are a bit unsure of how to create the recommendation tool. How are we going to implement the cosine similarity
