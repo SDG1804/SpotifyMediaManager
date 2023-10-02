@@ -35,3 +35,5 @@ You can find our code in the src folder of this repository.
 ## Technical Problems
 - We are a bit unsure of how to create the recommendation tool. How are we going to implement the cosine similarity
 (or any other tool for finding similar objects) into Java?
+- We have to create a new token every hour. How can we implement this into the program so that the token is created 
+automatically for us?
