@@ -1,3 +1,6 @@
+package api;
+
+import entity.Song;
 import org.json.JSONException;
 
 public interface SongDB {

@@ -1,10 +1,13 @@
+package api;
+
+import entity.Song;
 import okhttp3.*;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 
-public class MongSong implements SongDB {
+public class MongoSongDB implements SongDB {
     private static final String API_TOKEN = System.getenv("API_TOKEN");
 
     public static String getApiToken() {

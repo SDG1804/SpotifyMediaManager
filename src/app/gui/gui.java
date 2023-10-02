@@ -1,3 +1,11 @@
+package app.gui;
+
+import api.MongoSongDB;
+import app.Config;
+import entity.Song;
+import use_case.GetSongUseCase;
+import use_case.LogSongUseCase;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -26,10 +34,10 @@ public class gui {
             cardPanel.add(getSongCard, "GetSongCard");
             cardPanel.add(logSongCard, "LogSongCard");
 
-            JButton getSongButton = new JButton("Get Song");
+            JButton getSongButton = new JButton("Get entity.Song");
             getSongButton.addActionListener(e -> cardLayout.show(cardPanel, "GetSongCard"));
 
-            JButton logSongButton = new JButton("Log Song");
+            JButton logSongButton = new JButton("Log entity.Song");
             logSongButton.addActionListener(e -> cardLayout.show(cardPanel, "LogSongCard"));
 
 
@@ -50,7 +58,7 @@ public class gui {
         defaultCard.setLayout(new BorderLayout());
 
         JLabel infoLabel = new JLabel("Welcome to the Spotify App (GUI Version)!\n" +
-                "\t Using API TOKEN: " + MongSong.getApiToken());
+                "\t Using API TOKEN: " + MongoSongDB.getApiToken());
 
         defaultCard.add(infoLabel, BorderLayout.CENTER);
 
@@ -105,7 +113,7 @@ public class gui {
 
             try {
                 logSongUseCase.logSong(artist, song);
-                JOptionPane.showMessageDialog(jFrame, "Song Added successfully.");
+                JOptionPane.showMessageDialog(jFrame, "entity.Song Added successfully.");
                 artistField.setText("");
                 songField.setText("");
             } catch (RuntimeException ex) {
@@ -115,7 +123,7 @@ public class gui {
         });
         logSongCard.add(new JLabel("Artist:"));
         logSongCard.add(artistField);
-        logSongCard.add(new JLabel("Song:"));
+        logSongCard.add(new JLabel("entity.Song:"));
         logSongCard.add(songField);
         logSongCard.add(logButton);
         logSongCard.add(resultLabel);

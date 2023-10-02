@@ -1,3 +1,6 @@
+package use_case;
+
+import api.SongDB;
 import org.json.JSONException;
 
 public final class LogSongUseCase {

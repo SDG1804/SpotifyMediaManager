@@ -1,3 +1,5 @@
+package entity;
+
 public class Song {
 
     private String artist;
@@ -37,7 +39,7 @@ public class Song {
 
     @Override
     public String toString() {
-        return "Your Song{" +
+        return "Your entity.Song{" +
                 "artist='" + artist + '\'' +
                 ", song='" + songs + '\'' +
                 '}';
@@ -50,9 +52,4 @@ public class Song {
     public String getSongs() {
         return songs;
     }
-
-
-
-
-
 }

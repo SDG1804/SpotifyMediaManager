@@ -17,8 +17,20 @@ known algorithms to find similar songs, artists and genres (currently we are con
 https://developer.spotify.com/documentation/web-api
 
 ## API Usage
+We used Postman to test out the API. We first created a token for us to use and then used the token to access things
+like artists and songs. The screenshots of our progress is below: 
+
+![](/Users/aviwalia/Downloads/Screen Shot 2023-09-30 at 9.28.24 PM.png)
+![](/Users/aviwalia/Downloads/Screen Shot 2023-09-30 at 9.28.33 PM.png)
+![](/Users/aviwalia/Documents/Screenshot 2023-10-01 at 8.26.31 PM.png)
 
 ## Java Code
+We created an example of an API call with java, creating an Artist object.
+
+The example shown below is when we call the information for the artist "Pitbull".
+You can find our code in the src folder of this repository.
+
+![](/Users/aviwalia/Documents/Screenshot 2023-10-01 at 8.56.10 PM.png)
 
 ## Technical Problems
 - We are a bit unsure of how to create the recommendation tool. How are we going to implement the cosine similarity
